@@ -1,5 +1,5 @@
 {% set name = "indexed_zstd" %}
-{% set version = "1.5.1" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2bc2897203e22969c1e3d4c7ea9b1c23c19f54f385cf4daa30167a2fbd771bf9
+  sha256: 89c09eaebbfa8a10634934b816cc3baa1a00e616bcc9e81f31546220e853bef6
 
 build:
-  skip: True  # [win]
+  skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -37,7 +37,7 @@ test:
 
 about:
   home: https://github.com/martinellimarco/indexed_zstd.git
-  summary: 'Fast random access to zstd files'
+  summary: Fast random access to zstd files
   license: MIT
   license_family: MIT
   license_file: LICENSE
