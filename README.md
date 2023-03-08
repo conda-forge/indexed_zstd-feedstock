@@ -1,11 +1,11 @@
-About indexed_zstd
-==================
+About indexed_zstd-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/indexed_zstd-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/martinellimarco/indexed_zstd.git
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/indexed_zstd-feedstock/blob/main/LICENSE.txt)
 
 Summary: Fast random access to zstd files
 
