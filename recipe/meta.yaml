@@ -1,5 +1,5 @@
 {% set name = "indexed_zstd" %}
-{% set version = "1.6.0" %}
+{% set version = "1.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,15 +7,16 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 89c09eaebbfa8a10634934b816cc3baa1a00e616bcc9e81f31546220e853bef6
+  sha256: 8b74378f9461fceab175215b65e1c489864ddb34bd816058936a627f0cca3a8b
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
