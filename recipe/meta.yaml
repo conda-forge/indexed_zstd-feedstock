@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -21,6 +21,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools >=42
     - cython
     - zstd
   run:
