@@ -21,6 +21,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools >=42
     - cython
     - zstd
   run:
